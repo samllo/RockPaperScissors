@@ -1,2 +1,54 @@
-hello world
-hello
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>R,P,S Game</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/8ae4b7406a.js" crossorigin="anonymous"></script> <!-- fontawesome provide stylable hand icons-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+  <h1>Rock Paper Scissors</h1>
+  <h2 id='gametext'>Choose a hand to begin!</h2>
+    
+  <div class="select">
+    <button class="fas fa-hand-rock" id="rock"></button>
+    <button class="fas fa-hand-paper" id="paper"></button>
+    <button class="fas fa-hand-scissors" id="scissors"><button>
+  </div>
+
+  <h2 style="color: rgb(233, 33, 19);" id="demo"></h2>
+  
+  <div class="container">
+    <!-- User score area-->
+    <div class="sections">
+      <div class="info">
+        <h3>Your score:</h3><span id="userScore">0</span>
+      </div>
+
+      <div class="show">
+        <i class="fas fa-hand-paper"></i> <!--hand icon-->
+      </div>
+    </div>
+
+    <!-- PC score area-->
+    <div class="sections">
+      <div class="info">
+        <h3>Computer score:</h3><span id="pcScore">0</span>
+      </div>
+
+      <div class="show PC">
+        <i class="fas fa-hand-paper"></i> <!--hand icon-->
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
