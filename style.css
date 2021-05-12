@@ -2,10 +2,69 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: yellow;
 }
 
+@font-face {
+  font-family:'protoGrotesk' ;
+  src: url(Font/ProtoGroteskWeb-Regular.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face{
+  font-family: 'stratos';
+  src: url(Font/StratosLCWeb-Light.woff);
+  font-style: normal;
+  font-weight: normal;
+}
 
+#titleContainer{
+  width: 50%;
+  float: right;
+}
 
 h1{
-  font-family: 'Teko', sans-serif;
+  font-family: 'protoGrotesk';
+  font-size: 6em;
+  line-height:1.1;
 }
+
+ h2{
+  font-family: 'stratos';
+  clear: both; /* clears floats */
+  text-align: center;
+  font-size: 3em;
+}
+
+#demo{
+  display:inline;
+  background-color: white;
+  border: black 5px solid;
+  border-radius: 2%;
+  margin-top: 1em;
+  padding: 0.1em ;
+  font-size: 3em;
+  position: absolute;
+  left: 50%; /*moves start of text to centre, once inline applied*/
+  transform: translateX(-50%); /* centres on the x axis*/
+}
+
+.select{
+  display: flex; /*applys flex to container allowing allign and justify to be used*/
+  align-items: center;
+  justify-content: center;
+}
+.select button{
+  margin: 0 20px;
+  padding: 25px;
+  border-radius: 4%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background : rgb(41, 40, 40);
+  font-size: 80pt;
+  color: yellow;
+}
+
+
+
