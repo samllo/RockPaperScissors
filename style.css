@@ -2,6 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  height: 100vh;
+}
+
+body {
+  min-height: 100vh;
   background-color: yellow;
 }
 
@@ -24,8 +33,10 @@
 }
 
 h1{
+  margin-top: 0.8em;
+  margin-bottom:0.8em;
   font-family: 'protoGrotesk';
-  font-size: 6em;
+  font-size: 4rem;
   line-height:1.1;
 }
 
@@ -33,17 +44,18 @@ h1{
   font-family: 'stratos';
   clear: both; /* clears floats */
   text-align: center;
-  font-size: 3em;
+  font-size: 3rem;
+  margin:0.5em ;
 }
 
 #demo{
   display:inline;
   background-color: white;
-  border: black 5px solid;
+  border: black 10px solid;
   border-radius: 2%;
   margin-top: 1em;
   padding: 0.1em ;
-  font-size: 3em;
+  font-size: 3rem;
   position: absolute;
   left: 50%; /*moves start of text to centre, once inline applied*/
   transform: translateX(-50%); /* centres on the x axis*/
@@ -62,9 +74,34 @@ h1{
   outline: none;
   cursor: pointer;
   background : rgb(41, 40, 40);
-  font-size: 80pt;
+  font-size: 6rem;
   color: yellow;
 }
 
+.container{
+  position:absolute ;
+  bottom:40%;
+  width: 100%;
+  background:none;
+}
 
+.usersections{
+  float: left;
+  padding-left:5em;
+}
 
+.pcsections{
+  float: right;
+  padding-right:5em;
+}
+
+.show{
+  font-size: 10rem;
+  padding:0.1em ;
+  background: none;
+}
+
+.info{
+  font-family: 'protoGrotesk';
+  font-size: 1.6rem;
+}

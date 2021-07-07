@@ -12,15 +12,6 @@ const pcIcon = document.querySelector('.PC i');
 const randomClasses = ["far fa-hand-rock", "far fa-hand-paper","far fa-hand-scissors"];
 const text = document.getElementById('demo');
 
-
-
-console.log(buttons);
-
-console.log(userScore)
-
-
-
-
 const game = () => {
   buttons.forEach(btn =>{
     btn.addEventListener('click',(e)=>{
