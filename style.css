@@ -65,6 +65,8 @@ h1{
   display: flex; /*applys flex to container allowing allign and justify to be used*/
   align-items: center;
   justify-content: center;
+  position:relative ;
+  z-index: 4;
 }
 .select button{
   margin: 0 20px;
@@ -83,6 +85,7 @@ h1{
   bottom:40%;
   width: 100%;
   background:none;
+  z-index: 2;
 }
 
 .usersections{
