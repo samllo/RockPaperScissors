@@ -19,7 +19,6 @@ const game = () => {
       displayIcon.className = clickedbutton; // assign clicked icon to display in "show i" div
 
       let randomNum = Math.floor(Math.random()* randomClasses.length);
-      console.log(randomNum);
       pcIcon.className = randomClasses[randomNum]; // assigns computer icon from randomclasses array based on random number generated between 0-2
 
       // if game is a draw/ same icons
